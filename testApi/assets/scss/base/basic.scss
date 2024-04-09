@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Jost&family=Nunito:wght@300;400;500;600;700&display=swap');
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0px auto;
+  @media (max-width: 75em) {
+    max-width: 960px;
+  }
+  @media(max-width: 62em) {
+    width: 680px;
+  }
+  @media (max-width: 48em) {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+._lock {
+  overflow: hidden;
+}
